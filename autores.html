@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de los autores</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #C8E6C9; /* Verde suave */
+            position: relative;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3; 
+        }
+        h1 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .authors-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            position: relative;
+        }
+        .author-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            text-align: center;
+        }
+        .author-card h2 {
+            color: #388E3C;
+            margin-bottom: 10px;
+        }
+        .author-card p {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .button-container {
+            margin-top: 30px;
+            position: relative;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #388E3C;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .btn:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <source src="marciano.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+</video>
+
+
+<h1>Acerca de los autores</h1>
+
+<div class="authors-container">
+    <div class="author-card">
+        <h2>Carlos </h2>
+        <p>Se desveló para hacer la mentada página</p>
+    </div>
+    <div class="author-card">
+        <h2>Alberto</h2>
+        <p>Cuenta buenos chistes :)</p>
+    </div>
+</div>
+
+<div class="button-container">
+    <a href="index.html" class="btn">Volver al Menú Principal</a>
+</div>
+
+</body>
+</html>
